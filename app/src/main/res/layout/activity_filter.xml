@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.android.nytimessearch.activities.FilterActivity">
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Begin Date"
+        android:id="@+id/textView"
+        android:editable="false"
+        android:height="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView3" />
+    <Spinner
+        android:id="@+id/sortDropdown"
+        android:layout_width="wrap_content"
+        android:entries="@array/arrays"
+        android:prompt="@string/prompt"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sort"
+        android:id="@+id/textView2"
+        android:editable="false"
+        android:height="10dp"
+        android:layout_marginTop="96dp"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/arts" />
+    <CheckBox android:id="@+id/arts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arts"
+        android:layout_above="@+id/sports"
+        android:layout_centerHorizontal="true" />
+    <CheckBox android:id="@+id/fashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fashion"
+        android:layout_below="@+id/sports"
+        android:layout_toEndOf="@+id/textView3" />
+    <CheckBox android:id="@+id/sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sports"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="New Desk Values"
+        android:id="@+id/textView3"
+        android:editable="false"
+        android:height="10dp"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/sortDropdown"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/arts" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveButton"
+        android:onClick="saveFilters"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/arts" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:paddingTop="10dp"
+        android:text="Select Date"
+        android:layout_above="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:onClick="selectDate"/>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NYTimesSearch</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_article_item">article_item</string>
+    <string name="title_activity_article_view">ArticleViewActivity</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="prompt">Choose Value</string>
+    <string name="arts">Arts</string>
+    <string name="fashion">Fashion and Style</string>
+    <string name="sports">Sports</string>
+</resources>
